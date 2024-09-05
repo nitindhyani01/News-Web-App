@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('',(req,res)=>{
     const locals ={
-        title:"NodeJs News",
+        title:"DailyLens",
         description: "Simple News website with NodeJs, Express & MongoDb."
     }
     res.render('./layouts/index',{locals});

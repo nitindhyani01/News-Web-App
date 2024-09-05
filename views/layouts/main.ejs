@@ -6,12 +6,12 @@
     <title><%= locals.title %></title>
     <meta name="description" content="<%= locals.description %>"></meta>
     <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" defer src="./js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="m-8">
         <%- include('../partials/header.ejs')  %>
-        <main class="main">
+        <main class="">
         <%- body %>
         </main>
         <%- include('../partials/footer.ejs') %>
