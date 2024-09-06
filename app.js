@@ -8,10 +8,16 @@ const PORT=5000 || process.env.PORT;
 
 app.use(express.static('public'));
 
+
+
 //Templating Engine
 app.use(expressLayout);
 app.set('layout','./layouts/main');
 app.set('view engine','ejs');
+app.get('/search', (req, res) => {
+    res.render('partials/search');
+});
+
 
 app.use('/',require('./server/routes/main'));
 
