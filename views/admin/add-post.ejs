@@ -1,0 +1,20 @@
+<div class="min-h-screen bg-gray-100 p-12 pt-12">
+    <a href="/dashboard">&larr;Back</a>
+    <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
+      <h1 class="text-3xl font-bold text-blue-600 mb-4">Add New Post</h1>
+      <form action="/add-post" method="POST" class="space-y-4">
+        <div>
+          <label for="title" class="block text-lg font-medium text-gray-700">Title</label>
+          <input type="text" name="title" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+        <div>
+          <label for="body" class="block text-lg font-medium text-gray-700">Content</label>
+          <textarea name="body" cols="50" rows="10" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+        </div>
+        <div>
+          <button type="submit" value="add" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition duration-200">Create Post</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
