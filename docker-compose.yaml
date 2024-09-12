@@ -5,6 +5,6 @@ services:
     build: .
     ports:
       - "5000:5000"
-    env_file: "/var/jenkins/.env"
+    env_file: "/home/.env"
     restart: "always"
 
